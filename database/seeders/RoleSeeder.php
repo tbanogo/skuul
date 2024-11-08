@@ -21,22 +21,22 @@ class RoleSeeder extends Seeder
             'name' => 'admin',
         ]);
         Role::firstOrCreate([
-            'name' => 'teacher',
+            'name' => 'teacher', // enseignant
         ]);
         Role::firstOrCreate([
-            'name' => 'student',
+            'name' => 'student', // apprenant
         ]);
         Role::firstOrCreate([
-            'name' => 'parent',
+            'name' => 'parent', // parent
         ]);
         Role::firstOrCreate([
-            'name' => 'accountant',
+            'name' => 'accountant', // comptable
         ]);
         Role::firstOrCreate([
-            'name' => 'librarian',
+            'name' => 'librarian', // bibliothèquaire
         ]);
         Role::firstOrCreate([
-            'name' => 'applicant',
+            'name' => 'applicant', // postulant pour un poste (ci dessus)
         ]);
     }
 }

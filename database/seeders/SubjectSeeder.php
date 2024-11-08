@@ -17,16 +17,16 @@ class SubjectSeeder extends Seeder
         Subject::firstOrCreate([
             'id' => 1,
         ], [
-            'name'        => 'Maths',
+            'name'        => 'Mathématique',
             'short_name'  => 'mat',
-            'my_class_id' => 1,
+            'my_class_id' => 8,
             'school_id'   => 1,
         ]);
 
         Subject::firstOrCreate([
-            'name'        => 'English',
+            'name'        => 'Anglais',
             'short_name'  => 'eng',
-            'my_class_id' => 2,
+            'my_class_id' => 7,
             'school_id'   => 1,
         ]);
     }

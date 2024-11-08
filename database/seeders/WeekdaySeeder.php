@@ -15,13 +15,13 @@ class WeekdaySeeder extends Seeder
     public function run()
     {
         $weekdays = [
-            'Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday',
-            'Sunday',
+            'Lundi',
+            'Mardi',
+            'Mercredi',
+            'Jeudi',
+            'Vendredi',
+            'Samedi',
+            'Dimanche',
         ];
 
         foreach ($weekdays as $weekday) {

@@ -16,39 +16,50 @@ class MyClassSeeder extends Seeder
     {
         MyClass::firstOrcreate([
             'id'             => 1,
-            'name'           => 'Kindergarten 1',
+            'name'           => 'Petite section',
             'class_group_id' => 1,
         ]);
 
         MyClass::firstOrcreate([
             'id'             => 2,
-            'name'           => 'Kindergarten 2',
+            'name'           => 'Moyenne section',
             'class_group_id' => 1,
         ]);
 
         MyClass::firstOrcreate([
             'id'             => 3,
-            'name'           => 'Nursery 1',
-            'class_group_id' => 2,
+            'name'           => 'Grande section',
+            'class_group_id' => 1,
         ]);
 
         MyClass::firstOrcreate([
             'id'             => 4,
-            'name'           => 'Nursery 2',
+            'name'           => 'CP1',
             'class_group_id' => 2,
         ]);
 
         MyClass::firstOrcreate([
             'id'             => 5,
-            'name'           => 'Primary 1',
-            'class_group_id' => 3,
+            'name'           => 'CP2',
+            'class_group_id' => 2,
+        ]);
+
+        MyClass::firstOrcreate([
+            'id'             => 6,
+            'name'           => 'CM2',
+            'class_group_id' => 2,
         ]);
 
         MyClass::firstOrcreate([
             'id'             => 7,
-            'name'           => 'Primary 2',
-            'class_group_id' => 4,
+            'name'           => '6 ième',
+            'class_group_id' => 3,
         ]);
-        MyClass::factory()->count(5)->create();
+
+        MyClass::firstOrcreate([
+            'id'             => 8,
+            'name'           => '3 ième',
+            'class_group_id' => 3,
+        ]);
     }
 }

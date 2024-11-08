@@ -16,13 +16,11 @@ class ExamSeeder extends Seeder
     {
         Exam::firstOrCreate([
             'id'          => 1,
-            'name'        => 'Exam 1',
-            'description' => 'Exam 1 description',
+            'name'        => 'Composition 1',
+            'description' => 'Composition du trimestre 1',
             'semester_id' => '1',
-            'start_date'  => '2020-01-01',
-            'stop_date'   => '2020-01-31',
+            'start_date'  => '2024-10-20',
+            'stop_date'   => '2025-02-20',
         ]);
-
-        Exam::factory()->count(10)->create();
     }
 }

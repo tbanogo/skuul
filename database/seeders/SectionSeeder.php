@@ -16,16 +16,20 @@ class SectionSeeder extends Seeder
     {
         Section::firstOrCreate([
             'id'          => 1,
-            'name'        => 'Gold',
-            'my_class_id' => 1,
+            'name'        => 'A',
+            'my_class_id' => 7,
         ]);
 
         Section::firstOrCreate([
             'id'          => 2,
-            'name'        => 'Ruby',
-            'my_class_id' => 1,
+            'name'        => 'B',
+            'my_class_id' => 7,
         ]);
 
-        Section::factory()->count(10)->create();
+        Section::firstOrCreate([
+            'id'          => 3,
+            'name'        => '1',
+            'my_class_id' => 2,
+        ]);
     }
 }

@@ -31,12 +31,13 @@ class Menu extends Component
                 'icon' => 'fas fa-school',
                 'can'  => 'menu-school',
 
-                'submenu' => [[
-                    'type'  => 'menu-item',
-                    'text'  => 'View Schools',
-                    'route' => 'schools.index',
-                    'can'   => 'read school',
-                ],
+                'submenu' => [
+                    [
+                        'type'  => 'menu-item',
+                        'text'  => 'View Schools',
+                        'route' => 'schools.index',
+                        'can'   => 'read school',
+                    ],
                     [
                         'type'  => 'menu-item',
                         'text'  => 'Create School',

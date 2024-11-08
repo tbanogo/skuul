@@ -18,15 +18,15 @@ class SchoolSeeder extends Seeder
         School::updateOrCreate(
             ['id' => 1],
             [
-                'name'     => 'Default School',
-                'address'  => 'School of Computing',
+                'name'     => 'Complexe scolaire somdé de kosoghin',
+                'address'  => 'Enseignement général',
                 'code'     => Str::Random(10),
-                'initials' => 'DSI',
+                'initials' => 'LPCSSK',
             ]
         );
 
-        School::factory()
-                ->count(3)
-                ->create();
+        // School::factory()
+        //         ->count(3)
+        //         ->create();
     }
 }

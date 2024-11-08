@@ -12,6 +12,10 @@ class FeeSeeder extends Seeder
      */
     public function run(): void
     {
-        Fee::factory()->count(10)->create();
+        Fee::firstOrCreate([
+            'fee_category_id' => 1,
+            'name'            => 'Frais d\'inscription',
+            'description'     => 'Frais pour l\'inscription annuelle des élèves.',
+        ]);
     }
 }
